@@ -1,0 +1,49 @@
+@import ../base/style.css
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,600,700)
+
+@font-face
+  font-family: "expressway-rg"
+  src: url('fonts/expressway-rg.ttf') format('truetype')
+
+=shadow($top, $left, $blur, $inset, $color)
+  -webkit-box-shadow: $top $left $blur $inset $color
+  -moz-box-shadow: $top $left $blur $inset $color
+  box-shadow: $top $left $blur $inset $color
+
+body
+  background: #c24318
+  font-family: "expressway-rg"
+
+#wrap-1
+  margin-top: 30px
+
+#theme-header
+  height: 120px
+  @import header
+
+#wrap-2
+  background: none
+  border: none
+  padding: 0
+
+#user
+  display: none
+
+#site-title
+  display: none
+
+@import navigation
+
+#content
+  margin-top: 0
+  background: #FFF
+  +shadow(0px, 0px, 15px, 0px, #2b0000)
+  @import leftbar
+  position: relative
+  padding-bottom: 50px
+  @import article
+
+#main-content-wrapper-1, #main-content-wrapper-2, #main-content-wrapper-3, #main-content-wrapper-4, #main-content-wrapper-5, #main-content-wrapper-6, #main-content-wrapper-7, #main-content-wrapper-8
+  background: none
+
+@import footer

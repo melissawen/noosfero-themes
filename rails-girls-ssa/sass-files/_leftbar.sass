@@ -1,0 +1,69 @@
+.box-2
+  margin: 60px 0px 0px -10px
+  .block-outer
+    z-index: 0
+    position: relative
+
+.link-list-block
+  li
+    +shadow(-2px, -2px, 3px, 0px, rgba(0,0,0,0.4)) 
+    a
+      background: #c24318
+      height: 50px
+      text-align: right
+      line-height: 50px
+      font-size: 14px
+      padding-right: 10px
+      border-radius: 0
+      color: #FFF
+      &:hover
+        color: #60220c
+        background: #c24318
+
+.highlights-block
+  background: #fff
+  padding: 10px
+  border: 1px solid #999
+  height: 140px
+  position: relative
+  &:after
+    z-index: -1
+    position: absolute
+    content: ""
+    bottom: 13px
+    right: 5px
+    left: auto
+    width: 50%
+    top: 80%
+    max-width: 190px
+    background: #777
+    +shadow(0px, 15px, 10px, 0px, #777)
+    -webkit-transform: rotate(5deg)
+    -moz-transform: rotate(5deg)
+    -o-transform: rotate(5deg)
+    -ms-transform: rotate(5deg)
+    transform: rotate(5deg)
+  .block-title
+    font-variant: normal
+    font-size: 12px
+    border: none
+    color: #000
+    margin-bottom: 2px
+    font-weight: 300
+    position: absolute
+    bottom: 5px
+    right: 10px
+  .highlights-container, .highlights-image-link
+    height: 120px !important
+    width: 100% !important
+    border: none
+  .highlights-image-link img
+    max-height: 120px
+  .highlights-label
+    height: 15px
+    padding: 2px 6px
+
+.article-block
+  img
+    max-width: 150px
+    padding-left: 30px
